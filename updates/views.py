@@ -24,5 +24,9 @@ def index(request):
     return render(request, 'base.html', context={"title": "welcome"})
 
 
+def about(request):
+    return render(request, 'about.html', context={})
+
+
 
 
