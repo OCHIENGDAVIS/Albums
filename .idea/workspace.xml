@@ -2,65 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d8183af-be6e-4a4c-90e6-fd36aeff2bba" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/albums.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Django_Lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/Activate.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/activate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/activate.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/chardetect.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/deactivate.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/django-admin.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/django-admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/easy_install-3.8.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/easy_install.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/epylint.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/isort.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/markdown_py.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/pip.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/pip3.8.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/pip3.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/pyjwt.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/pylint.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/pyreverse.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/python.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/pythonw.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/sqlformat.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/symilar.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/albums/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/albums/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/albums/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/albums/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/albums/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyvenv.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static-server/status/admin/Annotation_2020-01-05_131007.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/status/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/status/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/status/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/status/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/status/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/status/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/status/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/status/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/status/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/status/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/status/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updates/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updates/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updates/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updates/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updates/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updates/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updates/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updates/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updates/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updates/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/albums/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/albums/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/albums/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/albums/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,23 +27,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/updates/views.py">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/albums/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="368">
+              <caret line="152" column="29" lean-forward="true" selection-start-line="152" selection-start-column="29" selection-end-line="152" selection-end-column="59" />
               <folding>
-                <element signature="e#1#65#0" expanded="true" />
+                <element signature="e#307#316#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/updates/urls.py">
+        <entry file="file://$PROJECT_DIR$/accounts/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+            <state relative-caret-position="184">
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
               <folding>
                 <element signature="e#1#29#0" expanded="true" />
               </folding>
@@ -98,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/albums/settings.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2622">
-              <caret line="122" column="23" selection-start-line="122" selection-start-column="23" selection-end-line="122" selection-end-column="23" />
+            <state relative-caret-position="46">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -122,8 +75,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/albums/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+            <state relative-caret-position="529">
+              <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
               <folding>
                 <element signature="e#630#662#0" expanded="true" />
               </folding>
@@ -135,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/status/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
-              <caret line="13" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="13" />
+              <caret line="13" selection-start-line="11" selection-start-column="35" selection-end-line="13" />
               <folding>
                 <element signature="e#0#110#0" expanded="true" />
               </folding>
@@ -146,8 +99,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+            <state relative-caret-position="621">
+              <caret line="112" column="2" selection-start-line="112" selection-start-column="2" selection-end-line="112" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -161,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/status/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -211,10 +164,12 @@
         <option value="$PROJECT_DIR$/updates/views.py" />
         <option value="$PROJECT_DIR$/status/serializers.py" />
         <option value="$PROJECT_DIR$/status/urls.py" />
-        <option value="$PROJECT_DIR$/albums/settings.py" />
         <option value="$PROJECT_DIR$/status/models.py" />
-        <option value="$PROJECT_DIR$/albums/urls.py" />
         <option value="$PROJECT_DIR$/status/views.py" />
+        <option value="$PROJECT_DIR$/albums/urls.py" />
+        <option value="$PROJECT_DIR$/accounts/views.py" />
+        <option value="$PROJECT_DIR$/accounts/urls.py" />
+        <option value="$PROJECT_DIR$/albums/settings.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -245,6 +200,16 @@
           <expand>
             <path>
               <item name="albums" type="b2602c69:ProjectViewProjectNode" />
+              <item name="albums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="albums" type="b2602c69:ProjectViewProjectNode" />
+              <item name="albums" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="albums" type="b2602c69:ProjectViewProjectNode" />
+              <item name="albums" type="462c0819:PsiDirectoryNode" />
               <item name="albums" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -376,6 +341,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="943">
           <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding>
+            <element signature="e#307#316#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -562,26 +530,9 @@
     <entry file="file://$PROJECT_DIR$/status/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/albums/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2622">
-          <caret line="122" column="23" selection-start-line="122" selection-start-column="23" selection-end-line="122" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/albums/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-          <folding>
-            <element signature="e#630#662#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -589,7 +540,7 @@
     <entry file="file://$PROJECT_DIR$/status/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="13" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="13" />
+          <caret line="13" selection-start-line="11" selection-start-column="35" selection-end-line="13" />
           <folding>
             <element signature="e#0#110#0" expanded="true" />
           </folding>
@@ -599,10 +550,47 @@
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/albums/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <folding>
+            <element signature="e#630#662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding>
+            <element signature="e#1#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/albums/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="152" column="29" lean-forward="true" selection-start-line="152" selection-start-column="29" selection-end-line="152" selection-end-column="59" />
+          <folding>
+            <element signature="e#307#316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+        <state relative-caret-position="621">
+          <caret line="112" column="2" selection-start-line="112" selection-start-column="2" selection-end-line="112" selection-end-column="2" />
         </state>
       </provider>
     </entry>
