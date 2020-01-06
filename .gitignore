@@ -102,4 +102,4 @@ dmypy.json
 
 .vscode/
 *.cfg
-/.idea
+.idea/
