@@ -22,7 +22,7 @@ from updates.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
+    path('', index, name='index'),
     path('api/update/', include('updates.urls')),
     path('api/status/', include('status.urls')),
     path('api/auth/', include('accounts.urls')),
