@@ -1,4 +1,4 @@
-
+from django.shortcuts import render
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from .models import Update
 from .serializers import UpdateSerializer
@@ -18,6 +18,10 @@ class UpdateModeListAPIView(ListAPIView):
     serializer_class = UpdateSerializer
 
     queryset = Update.objects.all()
+
+
+def index(request):
+    return render(request, 'base.html', context={"title": "welcome"})
 
 
 
