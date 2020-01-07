@@ -1,12 +1,12 @@
 from django.contrib.auth import authenticate, get_user_model
 from rest_framework.views import APIView
-from rest_framework.generics import CreateAPIView
+from rest_framework.generics import CreateAPIView, RetrieveAPIView
 from rest_framework import permissions
 from rest_framework import status
 from rest_framework_jwt.settings import api_settings
 from rest_framework.response import Response
-from .serializers import UserRegisterSerializer
-
+from .serializers import UserRegisterSerializer, UserDetailSerializer
+from .permission import AnonPermissionOnly
 
 jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
 jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
@@ -15,7 +15,7 @@ User = get_user_model()
 
 class  AuthRegister(APIView):
     authentication_classes = []
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.AllowAny, AnonPermissionOnly]
 
     def post(self, request, *args, **kwargs):
         if request.user.is_authenticated:
@@ -35,7 +35,15 @@ class RegisterAPIView(CreateAPIView):
     serializer_class = UserRegisterSerializer
     queryset = User.objects.all()
     authentication_classes = []
-    permission_classes = []
+    permission_classes = [AnonPermissionOnly]
 
     # def get_serializer_context(self, request):
     #     return {'request': self.request}
+
+
+class UserDetailAPIView(RetrieveAPIView):
+    authentication_classes = []
+    permission_classes = []
+    serializer_class = UserDetailSerializer
+    queryset = User.objects.filter(is_active=True)
+    lookup_field = 'username'
