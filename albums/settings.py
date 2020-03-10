@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'updates',
     'status',
     'accounts',
+    'expensify',
 ]
 
 MIDDLEWARE = [

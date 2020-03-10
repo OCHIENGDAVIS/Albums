@@ -11,5 +11,3 @@ class StatusSerializer(serializers.ModelSerializer):
         fields = ['id','user', 'content', 'image']
 
 
-
-
