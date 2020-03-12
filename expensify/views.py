@@ -1,5 +1,5 @@
 from rest_framework import generics
-from .models import Expense
+from .models import Expense, Todo
 from . import serializers
 
 
@@ -39,7 +39,44 @@ class ExpenseUpdateAPIView(generics.UpdateAPIView):
     permission_classes = []
     authentication_classes = []
 
+# The ToDO App API views
 
+
+class ToDoListAPIView(generics.ListAPIView):
+    authentication_classes = []
+    permission_classes = []
+    serializer_class = serializers.TodoSerializer
+    queryset = Todo.objects.all()
+
+
+class ToDoDetailAPIView(generics.RetrieveAPIView):
+    authentication_classes = []
+    permission_classes = []
+    serializer_class = serializers.TodoSerializer
+    queryset = Todo.objects.all()
+    lookup_field = 'id'
+
+
+class ToDoUpdateAPIView(generics.UpdateAPIView):
+    authentication_classes = []
+    permission_classes = []
+    lookup_field = 'id'
+    serializer_class = serializers.TodoSerializer
+    queryset = Todo.objects.all()
+
+
+class TodoDeleteAPIView(generics.DestroyAPIView):
+    authentication_classes = []
+    permission_classes = []
+    lookup_field = 'id'
+    serializer_class = serializers.TodoSerializer
+    queryset = Todo.objects.all()
+
+
+class TodoCreateAPIView(generics.CreateAPIView):
+    authentication_classes = []
+    permission_classes = []
+    serializer_class = serializers.TodoSerializer
 
 
 
