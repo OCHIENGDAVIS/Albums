@@ -27,6 +27,7 @@ urlpatterns = [
     path('api/status/', include('status.urls')),
     path('api/auth/', include('accounts.urls')),
     path('api/expensify/', include('expensify.urls')),
+    path('api/scrimba/', include('scrimba.urls')),
 ]
 urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns = urlpatterns + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
