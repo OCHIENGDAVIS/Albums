@@ -5,8 +5,9 @@ from rest_framework import permissions
 from rest_framework import status
 from rest_framework_jwt.settings import api_settings
 from rest_framework.response import Response
-from .serializers import UserRegisterSerializer, UserDetailSerializer
+from .serializers import UserRegisterSerializer, UserDetailSerializer, HelloSerializer
 from .permission import AnonPermissionOnly
+from rest_framework import viewsets
 
 jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
 jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
@@ -52,6 +53,8 @@ class UserDetailAPIView(RetrieveAPIView):
 class HelloAPIView(APIView):
     """Test API view"""
 
+    serializer_class = HelloSerializer
+
     def get(self, request, format=None):
 
         '''Return a list if features of the APIView'''
@@ -62,3 +65,25 @@ class HelloAPIView(APIView):
             'its mapped mannually to URLS'
         ]
         return Response({'message' : an_Apiview })
+
+    def post(self, request):
+        """Creates an hello message with our name"""
+        serializer = HelloSerializer(data=request.data)
+        if serializer.is_valid():
+            name = serializer.data.get('name')
+            message = f'Hello {name}'
+            return Response({'message': message})
+        else:
+            return Response(data=serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class HelloViewSets(viewsets.ViewSet):
+    """Test api viewset"""
+
+    def list(self, request):
+        """Return an hello messsage"""
+        a_viewset = [
+            'uses actions (list, create, retrieve, update. partial_update)'
+        ]
+        return Response({'message': 'Hello', 'a_viewset': a_viewset})
+
