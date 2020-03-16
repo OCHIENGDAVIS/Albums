@@ -1,6 +1,7 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
 from rest_framework_jwt.settings import api_settings
+from .models import UserProfile
 
 
 jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
@@ -79,6 +80,27 @@ class HelloSerializer(serializers.Serializer):
     """Serializes a name field for testing our API"""
 
     name = serializers.CharField(max_length=10)
+
+
+class UserProfileSerializer(serializers.ModelSerializer):
+    """A User profile object serializer"""
+
+    class Meta:
+        model = UserProfile
+        fields = ['id', 'email', 'name', 'password']
+        extra_kwargs = {'password': {'write_only':True}}
+
+    def create(self, validated_data):
+        """Create and return  a new user"""
+        user = UserProfile(
+            email=validated_data.get('email'),
+            name=validated_data.get('name')
+        )
+        user.set_password(validated_data.get('password'))
+        user.save()
+        return user
+
+
 
 
 

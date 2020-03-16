@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'accounts',
     'expensify',
     'scrimba',
+    'feeds'
 ]
 
 MIDDLEWARE = [

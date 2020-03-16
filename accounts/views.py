@@ -1,13 +1,19 @@
 from django.contrib.auth import authenticate, get_user_model
 from rest_framework.views import APIView
-from rest_framework.generics import CreateAPIView, RetrieveAPIView
+from rest_framework.generics import CreateAPIView, RetrieveAPIView, ListAPIView, DestroyAPIView, UpdateAPIView
 from rest_framework import permissions
 from rest_framework import status
+from rest_framework import filters
 from rest_framework_jwt.settings import api_settings
 from rest_framework.response import Response
-from .serializers import UserRegisterSerializer, UserDetailSerializer, HelloSerializer
+from rest_framework.authtoken.serializers import AuthTokenSerializer
+from rest_framework.authtoken.views import ObtainAuthToken
+from .serializers import UserRegisterSerializer, UserDetailSerializer, HelloSerializer, UserProfileSerializer
 from .permission import AnonPermissionOnly
 from rest_framework import viewsets
+from .models import UserProfile
+
+from .permission import UpdateOwnProfile
 
 jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
 jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
@@ -83,7 +89,27 @@ class HelloViewSets(viewsets.ViewSet):
     def list(self, request):
         """Return an hello messsage"""
         a_viewset = [
-            'uses actions (list, create, retrieve, update. partial_update)'
+            'uses actions (list, create, retrieve, update. partial_update, delete)'
         ]
         return Response({'message': 'Hello', 'a_viewset': a_viewset})
 
+
+class UserProfileAPIView(ListAPIView):
+    """Endpoint powering the the user profile endpoints"""
+    serializer_class = UserProfileSerializer
+    queryset = UserProfile.objects.all()
+    filter_backends = (filters.SearchFilter, )
+    search_fields = ('name', 'email')
+
+
+class UserProfileCreateAPIView(CreateAPIView):
+    serializer_class = UserProfileSerializer
+    queryset = UserProfile.objects.all()
+
+
+class UserLogin(ObtainAuthToken):
+    """Checks email and password and returns an auth token"""
+    serializer_class = AuthTokenSerializer
+
+    def get(self, request, format=None  ):
+        return Response({'Message': 'Something nice'})
