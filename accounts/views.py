@@ -47,3 +47,18 @@ class UserDetailAPIView(RetrieveAPIView):
     serializer_class = UserDetailSerializer
     queryset = User.objects.filter(is_active=True)
     lookup_field = 'username'
+
+
+class HelloAPIView(APIView):
+    """Test API view"""
+
+    def get(self, request, format=None):
+
+        '''Return a list if features of the APIView'''
+        an_Apiview = [
+            'Uses HTTP methods as functions(get, post, delete, put, patch)',
+            'It it similar to a traditional django view',
+            'gives you the most cotrol over your API',
+            'its mapped mannually to URLS'
+        ]
+        return Response({'message' : an_Apiview })
