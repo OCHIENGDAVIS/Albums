@@ -22,5 +22,3 @@ class UserProfileFeedCreate(generics.CreateAPIView):
         if not self.request.user.is_authenticated:
             return Response({'message': 'You are not authenticated, please login first'})
         return serializer.save(user_profile=self.request.user)
-
-
