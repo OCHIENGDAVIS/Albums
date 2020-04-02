@@ -2,6 +2,7 @@ from rest_framework import serializers
 from .models import ProfileFeedItem
 
 
+
 class ProfileFeedItemSerializer(serializers.ModelSerializer):
     """Serializer for the profile feed items"""
     class Meta:

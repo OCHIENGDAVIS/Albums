@@ -18,7 +18,6 @@ class UserProfileFeedCreate(generics.CreateAPIView):
     permission_classes = (PostOwnStatus, IsAuthenticatedOrReadOnly)
 
     def perform_create(self, serializer):
-        print('performing some create!!')
         if not self.request.user.is_authenticated:
             return Response({'message': 'You are not authenticated, please login first'})
         return serializer.save(user_profile=self.request.user)
